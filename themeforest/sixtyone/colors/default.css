@@ -1,0 +1,469 @@
+/* -----------------------------------------
+	01. General
+----------------------------------------- */
+/* Basic Typography
+=================================== */
+body {
+  background: #fafafa;
+  color: #686868;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.section-title:before, #reply-title:before, .section-title:after, #reply-title:after {
+  background: #e1e1e1;
+}
+
+img, iframe, #map {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+a {
+  color: #d3b274;
+}
+a:hover, a:focus {
+  color: #444444;
+}
+
+/* General Form Styling
+=================================== */
+input,
+textarea {
+  background-color: white;
+  border: solid 1px #e1e1e1;
+  background-image: none;
+  border-radius: 1px;
+}
+input:hover,
+textarea:hover {
+  background-color: white;
+  border-color: #c7c7c7;
+}
+input:focus,
+textarea:focus {
+  background-color: #fafafa;
+  box-shadow: inset 0 0 3px #c7c7c7;
+  color: #7a7a7a;
+}
+
+/* Buttons
+=================================== */
+.btn, .comment-reply-link,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+button {
+  background-image: none;
+  background-color: #d3b274;
+  color: #fff;
+}
+.btn:hover, .comment-reply-link:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+  background: #ab8236;
+  color: #FFF;
+}
+
+.button {
+  background: white;
+  border: solid 2px #d3b274;
+  color: #444444;
+}
+.button:hover {
+  text-decoration: none;
+  border-color: #444444;
+  color: #d3b274;
+}
+
+/* General Element Styling
+=================================== */
+dl dt {
+  color: #444444;
+}
+
+dl dt span {
+  color: #adadad;
+}
+
+dl dd {
+  border-left: solid 1px #d3b274;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 3px solid #d3b274;
+}
+blockquote cite {
+  color: rgba(104, 104, 104, 0.8);
+}
+
+/* Tables */
+table th {
+  background: #d3b274;
+  border-style: solid;
+  border: solid 1px #caa359;
+  border-right-color: #dcc18f;
+  border-right-width: 1px !important;
+  border-bottom-width: 0 !important;
+  color: #fff;
+}
+
+table th a {
+  color: white;
+}
+
+table td {
+  background: #fafafa;
+  border-style: solid;
+  border: solid 1px #ededed;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-right-width: 1px !important;
+  border-bottom-width: 1px !important;
+  color: #686868;
+}
+
+table tr:nth-child(odd) td {
+  background: white;
+}
+
+table tr th:last-child, table td:last-child {
+  border-right-width: 0;
+}
+
+/* Code */
+pre {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Flexslider Overrides
+=================================== */
+.flex-direction-nav a {
+  color: #FFF;
+}
+.flex-direction-nav a:hover {
+  color: #FFF;
+}
+
+.flex-control-paging li a {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.flex-control-paging li a.flex-active {
+  background: #d3b274;
+}
+
+/* -----------------------------------------
+	02. Header
+----------------------------------------- */
+#header-wrap {
+  background: white;
+}
+
+/* Top Row
+=================================== */
+#top-row {
+  border-bottom: solid 1px #e1e1e1;
+}
+
+/* -----------------------------------------
+	03. Footer
+----------------------------------------- */
+.footer-page {
+  background: #fff;
+  box-shadow: 0 -3px 0 rgba(0, 0, 0, 0.03);
+}
+
+.credits:before {
+  background: #e1e1e1;
+}
+
+/* -----------------------------------------
+	04. Navigation
+----------------------------------------- */
+.navigation a {
+  padding: 12px;
+  color: #444444;
+}
+.navigation a:hover,
+.navigation .sfHover > a {
+  color: #c79d4d;
+  /* First Level & Global Menu Link Hover Styles */
+}
+.navigation > li ul a {
+  background: white;
+  /* All Other Menu Level Link Styles */
+}
+.navigation > li ul a:hover,
+.navigation > li ul .sfHover > a {
+  color: #d3b274;
+  background: #444444;
+  /* All Other Level Menu Link Hover Styles */
+}
+.navigation ul {
+  background: #fafafa;
+  border: solid 1px rgba(0, 0, 0, 0.09);
+  /* All Lower Level Menu Container Styles */
+}
+
+/* -----------------------------------------
+	05. Modules
+----------------------------------------- */
+/* Top Panel
+=================================== */
+#panel {
+  background: #2b2b2b;
+}
+
+#panel h2, #panel p {
+  color: #c4c4c4;
+}
+
+#panel h2:before, #panel h2:after {
+  background: #444444;
+}
+
+#top-wrap {
+  background: white;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.03);
+}
+
+#top:before, #top:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJIAAAAICAYAAACiX9UpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RERBMzk3OTM5NkExMUUyQUNENEZGMzI0NTgxNURDNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RERBMzk3QTM5NkExMUUyQUNENEZGMzI0NTgxNURDNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjREREEzOTc3Mzk2QTExRTJBQ0Q0RkYzMjQ1ODE1REM1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjREREEzOTc4Mzk2QTExRTJBQ0Q0RkYzMjQ1ODE1REM1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+F06RhwAAAPxJREFUeNrs3UEOgjAQBVCYs6D3v47gXbAuTNASQyixwT4SQnhh9Re/TFnQT+Ot+zjmdPZdfnCe+XC5vuF9Gudk2fPfXJ6cc/57f/X3nt5+errKk3POK/me3l7cy5NzXtQ/IRx+lNtE4pzz/+/tNZcn55yfYxNJnpzzI/onhMMNI5xzrrf1Nuect9HncuOcl3oIgRtGOOfcF229zTnnbbyHy41zXuohBG4TiXPOud7mnHPv4ZxzvsVDCLzELV6cc97mMCI3zjm3icQ5b7N/Qji85qImN845N4xwzjnX25zz8/SPv7bxqoua3Djn3DDCOed8u+ttznnt/nkIMADsR+fWUoLusQAAAABJRU5ErkJggg==");
+}
+
+/* Homepage slider
+=================================== */
+#home-slider {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+#home-slider .flex-direction-nav a {
+  background: #d3b274;
+}
+
+/* Testimonials slider
+=================================== */
+.testimonial-slider {
+  background: none;
+}
+
+/* Amenities
+=================================== */
+.amenities {
+  border-right: solid 1px #e1e1e1;
+}
+
+.amenities ul li i {
+  color: #c7c7c7;
+}
+
+/* Homepage Welcome
+=================================== */
+.welcome {
+  border-right: solid 1px #e1e1e1;
+  border-bottom: solid 1px #e1e1e1;
+}
+
+/* Homepage Drop-in Section
+=================================== */
+#drop-in {
+  background: #f0f0f0;
+}
+#drop-in:before, #drop-in:after {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABJIAAAAICAYAAACiX9UpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyRpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoTWFjaW50b3NoKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo0RERBMzk3OTM5NkExMUUyQUNENEZGMzI0NTgxNURDNSIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo0RERBMzk3QTM5NkExMUUyQUNENEZGMzI0NTgxNURDNSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjREREEzOTc3Mzk2QTExRTJBQ0Q0RkYzMjQ1ODE1REM1IiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjREREEzOTc4Mzk2QTExRTJBQ0Q0RkYzMjQ1ODE1REM1Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+F06RhwAAAPxJREFUeNrs3UEOgjAQBVCYs6D3v47gXbAuTNASQyixwT4SQnhh9Re/TFnQT+Ot+zjmdPZdfnCe+XC5vuF9Gudk2fPfXJ6cc/57f/X3nt5+errKk3POK/me3l7cy5NzXtQ/IRx+lNtE4pzz/+/tNZcn55yfYxNJnpzzI/onhMMNI5xzrrf1Nuect9HncuOcl3oIgRtGOOfcF229zTnnbbyHy41zXuohBG4TiXPOud7mnHPv4ZxzvsVDCLzELV6cc97mMCI3zjm3icQ5b7N/Qji85qImN845N4xwzjnX25zz8/SPv7bxqoua3Djn3DDCOed8u+ttznnt/nkIMADsR+fWUoLusQAAAABJRU5ErkJggg==");
+}
+
+/* Booking Form
+=================================== */
+.booking {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTA3LTE2VDE4OjM1OjU5KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFRUIxRjkwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFRUIxRkEwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkVFQjFGNzA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkVFQjFGODA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrvOnTAAAAApSURBVHjaYrx96yYDFvCfCZsgEDMyYRMEMZiwCSJLoAjCJDAEQQAgwAA2zwiZANWvhAAAAABJRU5ErkJggg==");
+}
+
+.booking .booking-field .ui-datepicker-trigger {
+  background: none;
+  color: #adadad;
+}
+
+/* Pagination
+=================================== */
+#paging a, #paging span {
+  background: white;
+}
+
+#paging a:hover, #paging .current {
+  background: #d3b274;
+  color: #fff;
+}
+
+#paging a:hover {
+  text-decoration: none;
+}
+
+/* Item Listing
+=================================== */
+.item-listing {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTA3LTE2VDE4OjM1OjU5KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFRUIxRjkwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFRUIxRkEwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkVFQjFGNzA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkVFQjFGODA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrvOnTAAAAApSURBVHjaYrx96yYDFvCfCZsgEDMyYRMEMZiwCSJLoAjCJDAEQQAgwAA2zwiZANWvhAAAAABJRU5ErkJggg==");
+}
+
+.item-listing:hover {
+  background: #d3b274;
+}
+
+.item-container, .item-zoom {
+  background: whitesmoke;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1), inset 0 0 5px white;
+}
+
+/* Location page
+=================================== */
+.location-services {
+  background: white;
+}
+
+.location-icon {
+  background: url("images/location/location_sprite.html") no-repeat;
+}
+
+/* Forms
+=================================== */
+.form-field button {
+  color: #adadad;
+}
+
+/* Page / Post styles
+=================================== */
+.entry {
+  background: white;
+}
+
+.entry:after {
+  background: #e1e1e1;
+}
+
+/* -----------------------------------------
+   06. Comments
+----------------------------------------- */
+.comment-body {
+  background: white;
+}
+
+.form-allowed-tags,
+.comment-notes {
+  color: rgba(104, 104, 104, 0.8);
+}
+
+/* -----------------------------------------
+	07. Widgets
+----------------------------------------- */
+.widget {
+  background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA+hpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczpkYz0iaHR0cDovL3B1cmwub3JnL2RjL2VsZW1lbnRzLzEuMS8iIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIiB4bWxuczpzdFJlZj0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL3NUeXBlL1Jlc291cmNlUmVmIyIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ0MgKE1hY2ludG9zaCkiIHhtcDpDcmVhdGVEYXRlPSIyMDE0LTA3LTE2VDE4OjM1OjU5KzAzOjAwIiB4bXA6TW9kaWZ5RGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgeG1wOk1ldGFkYXRhRGF0ZT0iMjAxNC0wNy0xNlQxNTozNjoyMCswMzowMCIgZGM6Zm9ybWF0PSJpbWFnZS9wbmciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6NDZFRUIxRjkwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6NDZFRUIxRkEwNTIzMTFFNEEwM0NGQ0ZBNzQwOUQ4MjciPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo0NkVFQjFGNzA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo0NkVFQjFGODA1MjMxMUU0QTAzQ0ZDRkE3NDA5RDgyNyIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PrvOnTAAAAApSURBVHjaYrx96yYDFvCfCZsgEDMyYRMEMZiwCSJLoAjCJDAEQQAgwAA2zwiZANWvhAAAAABJRU5ErkJggg==");
+}
+
+.aside-container {
+  background: whitesmoke;
+}
+
+/* WIDGET: #List Widgets
+========================================= */
+.widget ul li {
+  border-bottom: 1px dotted #e1e1e1;
+}
+
+.widget ul ul.children li:first-child {
+  border-top: 1px dotted #e1e1e1;
+}
+
+/* WIDGET: #Social Icons (HTML only)
+========================================= */
+.social-icon i {
+  background-color: #d3b274;
+  color: #FFF;
+}
+
+.social-icon:hover i {
+  background-color: #444444;
+}
+
+/* WIDGET: Room
+========================================= */
+.widget_ci_room_widget:hover {
+  background: #d3b274;
+}
+
+/* -----------------------------------------
+	08. WordPress defaults
+----------------------------------------- */
+.gallery-caption {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+/* -----------------------------------------
+  09.  MOBILE MENU
+----------------------------------------- */
+#mobile-bar {
+  background: #FFF;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.menu-trigger,
+.menu-trigger:focus {
+  color: #333;
+}
+
+.menu-trigger:hover {
+  color: #333;
+}
+
+.menu-trigger:active {
+  opacity: 1;
+}
+
+/* -----------------------------------------
+	10. External Plugins
+----------------------------------------- */
+/* Dropkick
+=================================== */
+.dk_theme_ci a {
+  color: #fff;
+}
+
+.dk_theme_ci .dk_toggle {
+  background: white;
+  border: solid 1px #e1e1e1;
+  color: #7a7a7a;
+}
+
+.dk_theme_ci .dk_toggle:hover {
+  border-color: #c7c7c7;
+}
+
+.dk_theme_ci .dk_toggle:after {
+  color: #adadad;
+}
+
+.dk_theme_ci .dk_options {
+  background: #fafafa;
+  border: solid 1px rgba(0, 0, 0, 0.09);
+}
+
+.dk_theme_ci .dk_options a {
+  color: #7a7a7a;
+  background: #fff;
+}
+
+.dk_theme_ci .dk_options a:hover {
+  background: #444444;
+  color: #d3b274;
+}
+
+.dk_open .dk_label {
+  background-color: #fafafa;
+  box-shadow: inset 0 0 3px #c7c7c7;
+  color: #7a7a7a;
+}
